@@ -11,11 +11,23 @@ Just for fun evaluator of symbolic expressions in OCaml with Menhir. Handles tri
 
 ##examples
 
+### simple differentiation
+
 `d(e^(3*X))`
 
 returns
 
 `3*(e^(3*X))`
+
+### more complicated example
+
+`d((X^2)+e^(cos(X)))`
+
+returns
+
+`(2*X+-Sin(X)*(e^(Cos(X))))`
+
+The result is slightly ugly, but symbolically correct.
 
 ##Permissable expressions
 * any integer value
